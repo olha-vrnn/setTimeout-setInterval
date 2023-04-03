@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Date, setTimeout, setInterval</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="block display-flex-column">
+            <div class="current-date"></div>
+            <div class="current-time"></div>
+        </div>
+
+        <div class="block display-flex-raw">
+            <div class="stopwatch-block display-flex-column">
+                <div class="stopwatch">
+                    <div id="hour" class="sw-numbers">00</div>
+                    :
+                    <div id="minute" class="sw-numbers">00</div>
+                    :
+                    <div id="second" class="sw-numbers">00</div>
+                    :
+                    <div id="millisecond" class="sw-numbers">000</div>
+                </div>
+                <div class="stopwatch-btns">
+                    <button class="big-btn start-stopwatch">START</button>
+                    <button class="big-btn loop-stopwatch">LOOP</button>
+                    <button class="big-btn stop-stopwatch">STOP</button>
+                    <button class="big-btn reset-stopwatch">RESET</button>
+                </div>
+            </div>
+            <div class="stopwatch-window"></div>
+
+        </div>
+        <div class="timer block display-flex-raw">
+            <div class="first-timer-box display-flex-column">
+                <div class="set-min">25</div>
+                <div class="min">minutes</div>
+                <div>
+                    <button class="small-btn plus">+</button>
+                    <button class="small-btn minus">-</button>
+                </div>
+            </div>
+            <div class="second-timer-box display-flex-column">
+                <div class="countdown-timer">
+                    00:00
+                </div>
+                <div>
+                    <button class="big-btn start-timer">START</button>
+                    <button class="big-btn stop-timer">STOP</button>
+                    <button class="big-btn reset-timer">RESET</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
